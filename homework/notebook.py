@@ -195,13 +195,13 @@ plt.show()
 
 import pickle
 
-with open("estimator.pickle", "wb") as file:
+with open("estimator.pkl", "wb") as file:
     pickle.dump(estimator, file)
         	
     
     
 # %% 
-with open("estimator.pickle", "rb") as file:
+with open("estimator.pkl", "rb") as file:
     new_clf = pickle.load(file)
 
 accuracy_score(
